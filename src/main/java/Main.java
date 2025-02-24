@@ -7,7 +7,7 @@ public class Main {
 //    double height = 154.5;
 //    System.out.println("My name is " + name + ", I am " + age + " years old, and my height is " + height + " cm.");
         //if statement = perform different actions based on different conditions
-        Scanner scanner = new Scanner(System.in);
+   /*     Scanner scanner = new Scanner(System.in);
 
         String name;
         int age;
@@ -56,6 +56,47 @@ public class Main {
         else {
             System.out.print("You are not a student.");
         }
+
+        scanner.close();
+        */
+  //while loop
+
+//        int i = 0;
+//        while(i < 5) {
+//            System.out.println(i);
+//            i++;
+//        }
+//        int countdown = 3;
+//        while(countdown > 0) {
+//            System.out.println(countdown);
+//            countdown--;
+//            }
+//            System.out.println("Happy New Year!");
+//
+        //interest calculator
+        Scanner scanner = new Scanner(System.in);
+
+        double principal;
+        double rate;
+        int timesCompounded;
+        int years;
+        double amount;
+
+        System.out.println("Enter the principal amount: ");
+        principal = scanner.nextDouble();
+
+        System.out.println("Enter the rate(in %): ");
+        rate = scanner.nextDouble()/100;
+
+        System.out.println("Enter the number of times the interest is compounded per year: ");
+        timesCompounded = scanner.nextInt();
+
+        System.out.println("Enter the number of years: ");
+        years = scanner.nextInt();
+
+        amount = principal * Math.pow(1 + rate/timesCompounded, timesCompounded * years);
+
+        System.out.println("The amount after " + years + " years is: $" + amount + ".");
 
         scanner.close();
 
