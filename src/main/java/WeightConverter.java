@@ -15,13 +15,13 @@ public class WeightConverter {
           System.out.println("Enter the weight in kilograms: ");
           double weightInKilograms = scanner.nextDouble();
           double weightInPounds = weightInKilograms * 2.20462;
-          System.out.println("The weight in pounds is: " + weightInPounds);
+          System.out.printf("The weight in pounds is: %.2f\n", weightInPounds);
           break;
         case 2:
           System.out.println("Enter the weight in pounds: ");
           double weightInPounds2 = scanner.nextDouble();
           double weightInKilograms2 = weightInPounds2 / 2.20462;
-          System.out.println("The weight in kilograms is: " + weightInKilograms2);
+          System.out.printf("The weight in kilograms is: %.2f\n", weightInKilograms2);
           break;
         default:
           System.out.println("Invalid choice! Please choose 1 or 2.");
